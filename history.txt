@@ -1,0 +1,5 @@
+git checkout --orphan orphan
+git rm --cached secret.txt
+git add encrypted-secrets.txt
+git commit -m "Secrets are now encrypted"
+git push -f origin orphan:master
